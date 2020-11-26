@@ -172,7 +172,7 @@ const tutorials = <Row>
                 <div className="col-lg-8 col-md-10 mx-auto">
                 <div className="page-heading">
                     <h1>Resource Section</h1>
-                    <span className="subheading">Explore range of resources......</span>
+                    <span className="subheading">Explore range of resources......<br/>Note: This page best viewed on desktop mode</span>
                 </div>
                 </div>
             </div>
