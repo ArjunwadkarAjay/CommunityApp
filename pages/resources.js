@@ -171,8 +171,8 @@ const tutorials = <Row>
             <div className="row">
                 <div className="col-lg-8 col-md-10 mx-auto">
                 <div className="page-heading">
-                    <h1>Contact Me</h1>
-                    <span className="subheading">Have questions? I have answers.</span>
+                    <h1>Resource Section</h1>
+                    <span className="subheading">Explore range of resources......</span>
                 </div>
                 </div>
             </div>
