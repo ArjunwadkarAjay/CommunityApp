@@ -37,7 +37,7 @@ const Layout = (props) => {
           `}
         </style>
         <div className="navigation">
-          <Nav className="navbar navbar-dark bg-dark">
+          <Nav className="navbar navbar-fixed-top navbar-dark bg-dark container-fluid">
               <NavItem>
                 <Link href="/">
                   <a className="navbar-brand">Home</a>
@@ -60,7 +60,7 @@ const Layout = (props) => {
               </NavItem>
               <NavItem>
                 <Link href="/announcements">
-                  <a className="navbar-brand">Announcements/Notices</a>
+                  <a className="navbar-brand">Notices</a>
                 </Link>
               </NavItem>
               <NavItem>
