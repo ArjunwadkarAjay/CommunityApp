@@ -21,7 +21,7 @@ export const ModalNew = (props) => {
           {content}
         </ModalBody>
         <ModalFooter>
-          <Button width ="inherit" color="secondary" onClick={toggle}>Cancel</Button>
+          <Button width ="25%" color="secondary" onClick={toggle}>Cancel</Button>
         </ModalFooter>
       </Modal>
     </div>
