@@ -21,7 +21,7 @@ export default ({allEventData}) => {
               <div className="col-lg-8 col-md-10 mx-auto">
               <div className="page-heading">
                   <h3>Quantumniac's Community Event Schedule</h3>
-                  <span className="subheading">Explore all our recent and upcoming events.</span>
+                  <span className="subheading">Explore all our recent and upcoming events.<br/>Note: This page best viewed on desktop mode</span>
               </div>
               </div>
           </div>
