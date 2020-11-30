@@ -68,9 +68,10 @@ class MyApp extends App {
 
         <Layout>
           <Component {...pageProps} />
+          <hr className="my-3"/>
+          <Footer></Footer>
         </Layout>
-        <hr className="my-3"/>
-        <Footer></Footer>
+        
       </AppContext.Provider>
     );
   }

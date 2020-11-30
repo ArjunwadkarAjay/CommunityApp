@@ -14,7 +14,7 @@ export const ModalNew = (props) => {
 
   return (
     <div className="container-fluid">
-      <Button color="danger" onClick={toggle}>View Resource</Button>
+      <Button className="btn btn-sm" color="danger" onClick={toggle}>View</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>{title}</ModalHeader>
         <ModalBody>

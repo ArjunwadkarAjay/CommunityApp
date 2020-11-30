@@ -2,9 +2,8 @@
 import { Table } from "reactstrap";
 import {fetchAPI} from '../lib/utility';
 
-
 export default ({allEventData}) => {  
-   
+  const title = "Quantumniac's|Notices";
   const table_data = <tbody>
       {
           allEventData.map((e)=>{
@@ -18,6 +17,7 @@ export default ({allEventData}) => {
   </tbody>
   return (
     <div className='chats'>
+      
       <header className="masthead">
           <div className="overlay"></div>
           <div className="container">

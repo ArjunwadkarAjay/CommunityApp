@@ -23,10 +23,13 @@ export default () => {
             <CardHeader>
               <h2 align="center">Learn and Interact with like minded Quantum Computing Enthusiast</h2>
             </CardHeader>
-            <CardBody>
-            <p>We keep you up-to-date with the cuurent trends and research in this area along with the Tutorials for beginners.</p> 
-            <p>See Out the posts and articles for any sub tiopic related to quantum computers below</p>    
-            <Button color="primary"><Link href="/resources">Go to Resources</Link></Button>
+            <CardBody style={{ "background-color":"#ededed", "color":"black"}}>
+            
+              <p>Quantum technology is set to fundamentally change computing as we know it. But to advance it we need collaboration, experimentation, and shared discoveries. Let’s make it happen.</p>
+              <Button color="primary"><Link href='/register'><a>Get Started🔥🔥!!!</a></Link></Button> 
+              <p>See Out the posts and articles for any sub topic related to quantum computers below</p>    
+              <Button color="primary"><Link href="/resources">Go to Resources</Link></Button>
+
             </CardBody>
           </Card>
         </Container>
@@ -50,6 +53,7 @@ export default () => {
       </div> 
       <br/>
       </Container>
+      
     </div>
   );
 };

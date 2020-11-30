@@ -1,14 +1,16 @@
 import React, { useContext } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import { Container, Nav, NavItem } from "reactstrap";
+import { Container, Nav, Navbar,NavbarBrand,NavbarToggler,Collapse,UncontrolledDropdown,DropdownToggle,DropdownMenu,
+  DropdownItem, NavItem, NavLink } from "reactstrap";
 import { logout } from "../lib/auth";
 import AppContext from "../context/AppContext";
-
+import {useState} from 'react';
 const Layout = (props) => {
   const title = "Quantumniac's";
   const { user, setUser } = useContext(AppContext);
-
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
   return (
     <div>
       <Head>
@@ -36,8 +38,11 @@ const Layout = (props) => {
             
           `}
         </style>
-        <div className="navigation">
-          <Nav className="navbar navbar-fixed-top navbar-dark bg-dark container-fluid">
+        <Navbar color="dark" dark expand="md">
+          <NavbarBrand href="/">Quantumniac</NavbarBrand>
+          <NavbarToggler onClick={toggle} />
+          <Collapse isOpen={isOpen} navbar>
+          <Nav navbar className="navbar navbar-fixed-top navbar-dark bg-dark container-fluid">
               <NavItem>
                 <Link href="/">
                   <a className="navbar-brand">Home</a>
@@ -69,7 +74,7 @@ const Layout = (props) => {
                 </Link>
               </NavItem>
 
-            <NavItem className="ml-auto">
+            <NavItem>
               {user ? (
                 <h5>{user.username}</h5>
               ) : (
@@ -98,8 +103,8 @@ const Layout = (props) => {
               )}
             </NavItem>
           </Nav>
-        </div>
-        
+          </Collapse>
+      </Navbar>
       </header>
       <Container>{props.children}</Container>
     </div>
